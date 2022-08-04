@@ -1,0 +1,8 @@
+The task was to bring  an nginx container,
+and mount your own directory of statics file, and make it available at port 80.
+
+
+I have used volume to mount our directory of statics file and make it available 
+at port 80
+
+sudo docker run -p 80:80 -v $PWD/webconfig:/etc/nginx/ --name websrv -d nginx

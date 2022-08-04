@@ -1,0 +1,4 @@
+To run docker in docker your docker version should support --privileged flag.
+To run,
+docker run --privileged -d docker:dind
+dind is an official docker hub image which lets you run docker within docker using --privileged flag.

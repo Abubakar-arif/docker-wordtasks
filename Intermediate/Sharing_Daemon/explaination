@@ -1,0 +1,10 @@
+I created a docker file.
+First of all I chosed Alpine as a base image.
+And then I executed it and install the docker in the shell,
+and got this error "Cannot connect to the Docker daemon at unix:///var/run/docker.sock."
+
+And then I use -v tag,
+docker run --name bakar1 -dit -v /var/run/docker.sock:/var/run/docker.sock bakar
+
+And the docker was installed.
+lasty I updated the docker file

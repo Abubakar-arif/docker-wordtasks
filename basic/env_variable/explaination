@@ -1,0 +1,10 @@
+The task was to run a MongoDB container and set credentials with the use of environment variables.
+
+SOLUTION)
+$ docker run -d --network some-network --name some-mongo \
+	-e MONGO_INITDB_ROOT_USERNAME=mongoadmin \
+	-e MONGO_INITDB_ROOT_PASSWORD=secret \
+	mongo
+  
+
+  This is how to run a mongoDB container and setting credentials using environment variables.

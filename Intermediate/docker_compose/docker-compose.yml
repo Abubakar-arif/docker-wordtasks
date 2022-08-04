@@ -1,0 +1,15 @@
+services:
+  Flaskapp:
+    image: python:3.6-alpine
+    container_name: flaskapp
+    command: pip install Flask
+  # Redisdb:
+  #   image: redis:latest
+  #   container_name: Redis
+  # Ngnixstatic:
+  #   image: ngnix:latest
+  #   container_name: Ngnix_static
+
+  # Ngnixproxy:
+  #   image: ngnix:latest
+  #   container_name: Ngnix_proxy 
